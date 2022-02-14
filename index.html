@@ -1,8 +1,117 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Welcome to my page!</h1>
-<p>Nothing much here yet. I'll add more when/if I can find the time to learn html and css.</p>
-<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg">
-<iframe src="https://forkphorus.github.io/embed.html?id=320375459&auto-start=false&light-content=false" width="482" height="393" allowfullscreen="true" allowtransparency="true" style="border:none;"></iframe></body>
+
+<html lang="en-CA">
+    <head>
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HecticKiwi's Website</title>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update with new fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/Spongebob.jpg" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>HecticKiwi</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Software Engineer</p>
+            <img src="img/Spongebob.jpg" alt="a picture of HecticKiwi" class="intro__img">
+        </section>
+
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Service 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus pulvinar ex id vehicula. Fusce vulputate sagittis lectus sed dapibus. Etiam in dolor non ligula molestie dignissim. Donec quis magna arcu. Ut feugiat arcu tellus, nec rutrum felis tristique a. Sed posuere mauris eget tortor lacinia mollis. Quisque ultrices sit amet risus aliquet ultricies. Curabitur vel rhoncus ante, sed dictum tortor.</p>
+                </div> 
+
+                <div class="service">
+                    <h3>Service 2</h3>
+                    <p>Nulla posuere dui in ullamcorper convallis. In venenatis commodo libero eget posuere. Cras ultricies quam quis diam ultrices, at pharetra arcu finibus. Mauris hendrerit mi ut eros convallis, quis lobortis diam hendrerit. Cras quis tincidunt ante, in dignissim erat. Nullam sed maximus mauris. Mauris nibh risus, varius commodo pharetra in, mattis non nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc sollicitudin, felis nec auctor consequat, arcu eros eleifend erat, tincidunt varius risus dui vel neque. Integer non quam porttitor, sodales lacus ut, gravida tellus. Nunc convallis mauris ut odio condimentum pellentesque. Nam diam dolor, condimentum et purus a, semper posuere orci. Etiam suscipit ex neque, sit amet tristique ante tristique vel. Proin sed ornare ipsum, non sagittis massa.</p>
+                </div> 
+
+                <div class="service">
+                    <h3>Service 3</h3>
+                    <p>Praesent elit nibh, consectetur ac placerat malesuada, vestibulum in felis. Suspendisse dignissim molestie tempus. Morbi ut arcu eget purus aliquet molestie. Nullam vitae dapibus orci. Etiam nisi lectus, rutrum ac feugiat eu, vestibulum id mauris. Vivamus non fringilla nibh, vitae gravida velit. Donec sed nulla at dolor vulputate sodales ac at velit. Donec efficitur ullamcorper nisl, ut luctus velit mollis eget. Proin maximus magna sit amet lobortis lacinia. Aenean egestas ipsum fermentum molestie blandit. Sed malesuada pharetra sagittis. Proin dui libero, dictum id leo ac, interdum ultrices metus.</p>
+                </div> 
+
+                <a href="#work" class="btn">My Work</a>
+            </div>
+        </section>
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Some guy with a Spongebob profile picture I guess</p>
+
+            <div class="about-me__body">
+                <p></p>
+                <p></p>
+            </div>
+
+            <img src="img/Spongebob.jpg" alt="HecticKiwi">            
+        </section>
+
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title">My work</h2>
+            <p class="section__subtitle">Something something</p>
+
+            <!-- Portfolio item 1 -->
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="img/Spongebob.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+
+            <!-- Portfolio item 2 -->
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="img/Spongebob.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+
+            <!-- Portfolio item 3 -->
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="img/Spongebob.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <a href="mailto:test@example.org" class="footer__link">test@example.org</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list--link" href="#">link</a></li>
+                <li class="social-list__item"><a class="social-list--link" href="#">link</a></li>
+                <li class="social-list__item"><a class="social-list--link" href="#">link</a></li>
+            </ul>
+        </footer>
+    </body>
 </html>
