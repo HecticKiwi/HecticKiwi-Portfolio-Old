@@ -132,6 +132,7 @@ nav {display: none;}
 
 .intro__img {
     box-shadow: var(--bs);
+    border-radius: 100%;
 }
 
 .section__subtitle--intro {
