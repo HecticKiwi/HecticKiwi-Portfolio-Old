@@ -11,6 +11,7 @@
 	border-radius: 100%;
 	margin: 2em;
 	width: 20%;
+	max-width: 200px;
 	height: auto;
 }
 
