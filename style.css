@@ -135,4 +135,17 @@ footer a:hover {
     background-color: #517580;
 }
 
+button {
+    text-decoration: none;
+    background-color: #2b6777;
+    color: white;
+    padding: 5px;
+    border-radius: .25em;
+    display: inline-block;
+    border: none;
+}
+
+button:hover {
+    background-color: #517580;
+}
 
