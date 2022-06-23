@@ -33,7 +33,7 @@ body {
 a {
     color: white;
     text-decoration: none;
-    transition: 0.4s;
+    transition: opacity 0.4s
 }
 
 a:hover:not(.disabled) {
@@ -105,7 +105,7 @@ section:nth-child(odd) {
     width: 200px;
     height: auto;
     background-color: rgb(61, 61, 61);
-    transition: 0.4s;
+    transition: opacity 0.4s;
 }
 
 .projects .content img:hover {
