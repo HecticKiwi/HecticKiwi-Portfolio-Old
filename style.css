@@ -61,7 +61,7 @@ section:nth-child(odd) {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 800px;
