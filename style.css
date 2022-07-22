@@ -107,22 +107,49 @@ section:nth-child(odd) {
     text-align: center;
 }
 
-.projects .content div {
+.project {
+    margin: 0;
     width: 200px;
 }
 
-.projects .content img {
+.project .image {
+    position: relative;
     border: 4px solid var(--primary);
     border-radius: 10px;
-    object-fit: contain;
-    width: 200px;
-    height: auto;
-    background-color: var(--dark-gray);
-    transition: opacity var(--transition-time);
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
-.projects .content img:hover {
-    opacity: 0.8;
+.project .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: var(--transition-time);
+}
+
+.project .image:hover img {
+    filter: blur(5px);
+}
+
+.project .image:hover .overlay {
+    opacity: 1;
+}
+
+.project img {
+    width: 100%;
+    object-fit: contain;
+    /* object-position: -100px; */
+    background-color: var(--dark-gray);
+    transition: var(--transition-time);
+    display: block;
 }
 
 .description .content {
@@ -146,6 +173,7 @@ footer {
     padding: 5px;
     border-radius: .25em;
     display: inline-block;
+    border: none;
     transition: background-color var(--transition-time);
 }
 
