@@ -146,7 +146,6 @@ section:nth-child(odd) {
 .project img {
     width: 100%;
     object-fit: contain;
-    /* object-position: -100px; */
     background-color: var(--dark-gray);
     transition: var(--transition-time);
     display: block;
