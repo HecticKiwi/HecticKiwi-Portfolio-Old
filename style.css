@@ -97,6 +97,7 @@ section:nth-child(odd) {
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 10px;
 }
 
 .projects .content {
