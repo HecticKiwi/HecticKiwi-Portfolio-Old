@@ -1,3 +1,3 @@
 # HecticKiwi.github.io
 
-My personal website!
+This is my personal website, where I show the projects I've made.
