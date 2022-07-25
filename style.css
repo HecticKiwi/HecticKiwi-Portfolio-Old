@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
-    font-size: 16px;
+    font-size: 100%;
     font-family: 'Open Sans', sans-serif;
     --primary: #2b6777;
     --light-primary: #32788b;
@@ -34,10 +34,10 @@ header {
     justify-content: space-around;
     gap: 15%;
     background-color: var(--primary);
+    color: white;
 }
 
 header .logo-text {
-    color: white;
     font-weight: bold;
     font-size: 1.5rem;
     margin: 10px;
@@ -90,8 +90,8 @@ section:nth-child(odd) {
 }
 
 .intro {
-    max-width: 600px;
     flex: 1 1 430px;
+    max-width: 600px;
 }
 
 .intro h1 {
@@ -118,12 +118,11 @@ section:nth-child(odd) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 40px;
-    text-align: center;
 }
 
 .project {
-    margin: 0 auto;
     width: 200px;
+    margin: 0 auto;
 }
 
 .project .image {
@@ -132,6 +131,14 @@ section:nth-child(odd) {
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 10px;
+}
+
+.project img {
+    width: 100%;
+    object-fit: contain;
+    background-color: var(--dark-gray);
+    transition: var(--transition-time);
+    display: block;
 }
 
 .project .overlay {
@@ -155,14 +162,6 @@ section:nth-child(odd) {
 
 .project .image:hover .overlay {
     opacity: 1;
-}
-
-.project img {
-    width: 100%;
-    object-fit: contain;
-    background-color: var(--dark-gray);
-    transition: var(--transition-time);
-    display: block;
 }
 
 .description .content {
