@@ -77,7 +77,7 @@ section:nth-child(odd) {
 }
 
 .content {
-  width: 100%, 800px;
+  width: min(100%, 800px);
 }
 
 .hero .content {
