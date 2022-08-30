@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 :root {
-  font-size: 100%;
+  /* font-size: 100%; */
   font-family: "Open Sans", sans-serif;
   --primary: #2b6777;
   --light-primary: #32788b;
@@ -13,7 +13,8 @@
   box-sizing: border-box;
 }
 
-h1 {
+h1,
+h2 {
   color: rgb(49, 49, 49);
 }
 
@@ -74,6 +75,10 @@ section:nth-child(even) {
 
 section:nth-child(odd) {
   background-color: aliceblue;
+}
+
+article {
+  /* font-size: 2rem; */
 }
 
 .content {
