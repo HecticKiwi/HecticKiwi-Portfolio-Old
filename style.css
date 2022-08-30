@@ -50,17 +50,17 @@ header .links {
   gap: 15px;
 }
 
-a:not(.button) {
+.link {
   color: white;
   text-decoration: none;
   transition: color var(--transition-time);
 }
 
-a:hover:not(.button):not(.disabled) {
+.link:hover {
   color: #c8d8e4;
 }
 
-a.disabled {
+.link--disabled {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -75,10 +75,6 @@ section:nth-child(even) {
 
 section:nth-child(odd) {
   background-color: aliceblue;
-}
-
-article {
-  /* font-size: 2rem; */
 }
 
 .content {
