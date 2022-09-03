@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 :root {
-  /* font-size: 100%; */
   font-family: "Open Sans", sans-serif;
   --primary: #2b6777;
   --light-primary: #32788b;
@@ -30,24 +29,35 @@ body {
 }
 
 header {
+  padding: 10px;
+  background-color: var(--primary);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 15%;
-  background-color: var(--primary);
-  color: white;
+  flex-wrap: wrap;
+  gap: 15px 50px;
 }
 
 header .logo-text {
   font-weight: bold;
   font-size: 1.5rem;
-  margin: 10px;
 }
 
-header .links {
+header .links,
+.social {
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 15px;
+}
+
+.social {
+  margin-left: 1rem;
+}
+
+.social img {
+  width: 1.75rem;
+  display: block;
 }
 
 .link {
@@ -204,13 +214,4 @@ section:nth-child(odd) {
 .description .content {
   margin: 0 auto;
   text-align: left;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 30px;
-  gap: 40px;
-  background-color: var(--primary);
 }
