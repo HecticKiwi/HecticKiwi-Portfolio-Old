@@ -65,6 +65,7 @@ header .links,
   color: white;
   text-decoration: none;
   transition: filter var(--transition-time);
+  position: relative;
 }
 
 .link:hover,
@@ -72,9 +73,18 @@ header .links,
   filter: brightness(0.8)
 }
 
-.link--disabled {
+.link.active {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.underline {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: white;
 }
 
 .link--button {
