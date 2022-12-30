@@ -67,7 +67,8 @@ header .links,
   transition: filter var(--transition-time);
 }
 
-.link:hover {
+.link:hover,
+.link:focus {
   filter: brightness(0.8)
 }
 
@@ -84,7 +85,8 @@ header .links,
   border: none;
 }
 
-.link--button:hover {
+.link--button:hover,
+.link--button:focus {
   color: white;
   filter: brightness(0.8);
 }
@@ -107,7 +109,8 @@ header .links,
   transition: var(--transition-time);
 }
 
-.link--underline:hover::after {
+.link--underline:hover::after,
+.link--underline:focus::after {
   transform: translateY(0);
   filter: opacity(0.5);
 }
@@ -202,14 +205,18 @@ section:nth-child(odd) {
   justify-content: center;
   gap: 10px;
   transition: var(--transition-time);
+  pointer-events: none;
 }
 
-.project .image:hover img {
+.project .image:hover img,
+.project .image:focus-within img {
   filter: blur(5px);
 }
 
-.project .image:hover .overlay {
+.project .image:hover .overlay,
+.project .image:focus-within .overlay {
   opacity: 1;
+  pointer-events: all;
 }
 
 .description .content {
