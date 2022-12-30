@@ -11,7 +11,7 @@ const Header = () => {
       <span className="logo-text">HecticKiwi</span>
       <nav className="links">
         <NavLink className="link" to="/">Home</NavLink>
-        <a className="link" href="projects.html">Projects</a>
+        <NavLink className="link" to="projects">Projects</NavLink>
         <NavLink className="link" to="blog">Blog</NavLink>
         <Link className="link" to={resume} target="_blank">Resume</Link>
         <div className="social">

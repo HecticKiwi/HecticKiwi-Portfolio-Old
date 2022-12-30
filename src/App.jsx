@@ -4,6 +4,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, u
 import Blog from "./pages/Blog";
 
 import { AnimatePresence, motion } from 'framer-motion';
+import Projects from "./pages/Projects";
 
 const containerVariants = {
   hidden: {
@@ -11,6 +12,7 @@ const containerVariants = {
   },
   visible: {
     opacity: 1,
+    transition: { duration: .25, type: "tween" }
   }
 }
 
@@ -27,7 +29,6 @@ const Root = () => {
           initial='hidden'
           animate='visible'
           exit='hidden'
-          transition={{ duration: .25, type: "tween" }}
         >
           {outlet}
         </motion.div>
@@ -40,6 +41,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route index element={<Home />} />
+      <Route path="projects" element={<Projects />} />
       <Route path="blog" element={<Blog />} />
     </Route>
   )

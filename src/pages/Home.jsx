@@ -1,3 +1,5 @@
+import Tile from "../components/Tile";
+
 const PUBLIC_URL = process.env.PUBLIC_URL;
 const IMAGES = PUBLIC_URL + "/assets/images";
 
@@ -21,50 +23,32 @@ const Home = () => {
       <section className="projects">
         <h2>Here are some of my latest projects.</h2>
         <div className="content">
-          <figure className="project">
-            <div className="image">
-              <img src={IMAGES + "/weather-app.svg"} alt="" />
-              <div className="overlay">
-                <a href="https://hectickiwi.github.io/Weather-App/" target="_blank" className="link link--button" rel="noreferrer">Project</a>
-                <a href="https://github.com/HecticKiwi/Weather-App" target="_blank" className="link link--button" rel="noreferrer">Source Code</a>
-              </div>
-            </div>
-            <figcaption>Weather App</figcaption>
-          </figure>
-          <figure className="project">
-            <div className="image">
-              <img src={IMAGES + "/battleship.svg"} alt="" />
-              <div className="overlay">
-                <a href="https://hectickiwi.github.io/Battleship/" target="_blank" className="link link--button" rel="noreferrer">Project</a>
-                <a href="https://github.com/HecticKiwi/Battleship" target="_blank" className="link link--button" rel="noreferrer">Source Code</a>
-              </div>
-            </div>
-            <figcaption>Battleship</figcaption>
-          </figure>
-          <figure className="project">
-            <div className="image">
-              <img src={IMAGES + "/cv-builder.svg"} alt="" />
-              <div className="overlay">
-                <a href="https://hectickiwi.github.io/CV-Builder/" target="_blank" className="link link--button" rel="noreferrer">Project</a>
-                <a href="https://github.com/HecticKiwi/CV-Builder" target="_blank" className="link link--button" rel="noreferrer">Source Code</a>
-              </div>
-            </div>
-            <figcaption>CV Builder</figcaption>
-          </figure>
-          <figure className="project">
-            <div className="image">
-              <img src={IMAGES + "/epic-seven-memory-game.svg"} alt="" />
-              <div className="overlay">
-                <a href="https://hectickiwi.github.io/Epic-Seven-Memory-Game/" target="_blank" className="link link--button" rel="noreferrer">Project</a>
-                <a href="https://github.com/HecticKiwi/Epic-Seven-Memory-Game" target="_blank" className="link link--button" rel="noreferrer">Source Code</a>
-              </div>
-            </div>
-            <figcaption>Memory Game</figcaption>
-          </figure>
+          <Tile
+            name="Weather App"
+            img="/weather-app.svg"
+            projectLink="https://hectickiwi.github.io/Weather-App/"
+            sourceLink="https://github.com/HecticKiwi/Weather-App/"
+          />
+          <Tile
+            name="Battleship"
+            img="/battleship.svg"
+            projectLink="https://hectickiwi.github.io/Battleship/"
+            sourceLink="https://github.com/HecticKiwi/Battleship/"
+          />
+          <Tile
+            name="CV Builder"
+            img="/cv-builder.svg"
+            projectLink="https://hectickiwi.github.io/CV-Builder/"
+            sourceLink="https://github.com/HecticKiwi/CV-Builder/"
+          />
+          <Tile
+            name="Memory Game"
+            img="/epic-seven-memory-game.svg"
+            projectLink="https://hectickiwi.github.io/Epic-Seven-Memory-Game/"
+            sourceLink="https://github.com/HecticKiwi/Epic-Seven-Memory-Game/"
+          />
         </div>
-        <p>
-          You'll find more on my <a href="projects.html" className="link link--button">projects</a> page!
-        </p>
+        <p>You'll find more on my <a href="projects.html" className="link link--button">projects</a> page!</p>
       </section>
     </>
   );
