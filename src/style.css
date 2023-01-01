@@ -6,6 +6,7 @@
   --primary: #2b6777;
   --light-primary: #32788b;
   --dark-gray: rgb(61, 61, 61);
+  --white: white;
   --transition-time: 0.4s;
 }
 
@@ -127,7 +128,7 @@ section:nth-child(even) {
 }
 
 section:nth-child(odd) {
-  background-color: aliceblue;
+  background-color: white;
 }
 
 .content {
@@ -156,6 +157,7 @@ section:nth-child(odd) {
   border-radius: 50%;
   width: 175px;
   height: auto;
+  box-shadow: 0 0 20px var(--primary);
 }
 
 .projects {
