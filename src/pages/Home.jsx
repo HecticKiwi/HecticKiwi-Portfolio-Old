@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Tile from '../components/Tile';
 
 const { PUBLIC_URL } = process.env;
@@ -49,7 +50,7 @@ function Home() {
           />
         </div>
         <p>
-          You'll find more on my <a href="projects.html" className="link link--button">projects</a> page!
+          You'll find more on my <Link to="projects" className="link link--button">projects</Link> page!
         </p>
       </section>
     </>
