@@ -9,10 +9,6 @@
   --transition-time: 0.4s;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 h1,
 h2 {
   color: rgb(49, 49, 49);
@@ -80,6 +76,7 @@ header .links,
 
 .underline {
   position: absolute;
+  /* inset: 0 0 0 0; */
   bottom: -1px;
   left: 0;
   right: 0;

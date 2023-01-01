@@ -17,8 +17,11 @@
         "react"
     ],
     "rules": {
-        "react/jsx-one-expression-per-line": {
-            "allow": "single-child"
-        }
+        "react/jsx-one-expression-per-line": [
+            "error",
+            {
+                "single-child": "never"
+            }
+        ]
     }
 }
