@@ -17,11 +17,11 @@
         "react"
     ],
     "rules": {
-        "react/jsx-one-expression-per-line": [
-            "error",
-            {
-                "single-child": "never"
-            }
-        ]
+        "max-len": ["error", {"code": 10000}],
+        "object-curly-newline": "off",
+        "linebreak-style": ["error", "windows"],
+        "react/no-unescaped-entities": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "react/function-component-definition": "off"
     }
 }

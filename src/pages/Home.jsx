@@ -1,9 +1,9 @@
-import Tile from "../components/Tile";
+import Tile from '../components/Tile';
 
-const PUBLIC_URL = process.env.PUBLIC_URL;
-const IMAGES = PUBLIC_URL + "/assets/images";
+const { PUBLIC_URL } = process.env;
+const IMAGES = `${PUBLIC_URL}/assets/images`;
 
-const Home = () => {
+function Home() {
   return (
     <>
       <section className="hero">
@@ -16,7 +16,7 @@ const Home = () => {
             </p>
           </div>
           <div className="pfp">
-            <img src={IMAGES + "/Spongebob.jpg"} alt="" />
+            <img src={`${IMAGES}/Spongebob.jpg`} alt="" />
           </div>
         </div>
       </section>
@@ -48,7 +48,9 @@ const Home = () => {
             sourceLink="https://github.com/HecticKiwi/Epic-Seven-Memory-Game/"
           />
         </div>
-        <p>You'll find more on my <a href="projects.html" className="link link--button">projects</a> page!</p>
+        <p>
+          You'll find more on my <a href="projects.html" className="link link--button">projects</a> page!
+        </p>
       </section>
     </>
   );
