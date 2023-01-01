@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.fc8f820a.css",
-    "main.js": "/static/js/main.f53bf482.js",
+    "main.css": "/static/css/main.04680ef9.css",
+    "main.js": "/static/js/main.b0b46cc8.js",
     "static/media/Danny Duong Resume.pdf": "/static/media/Danny Duong Resume.f3ca98831e9399b8c5ff.pdf",
     "index.html": "/index.html",
-    "main.fc8f820a.css.map": "/static/css/main.fc8f820a.css.map",
-    "main.f53bf482.js.map": "/static/js/main.f53bf482.js.map"
+    "main.04680ef9.css.map": "/static/css/main.04680ef9.css.map",
+    "main.b0b46cc8.js.map": "/static/js/main.b0b46cc8.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc8f820a.css",
-    "static/js/main.f53bf482.js"
+    "static/css/main.04680ef9.css",
+    "static/js/main.b0b46cc8.js"
   ]
 }
