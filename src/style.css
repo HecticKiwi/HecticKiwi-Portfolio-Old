@@ -153,12 +153,42 @@ section:nth-child(odd) {
   font-size: 1.875rem;
 }
 
+.pfp {
+  position: relative;
+  z-index: 1;
+}
+
+.pfp::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  left: 0;
+  background-color: var(--primary);
+  transform: translate(30px, -20%);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.pfp::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: 0;
+  background-color: var(--light-primary);
+  transform: translate(10px, 100%);
+  opacity: 0.2;
+}
+
 .pfp img {
   border-radius: 50%;
   width: 175px;
   height: auto;
-  box-shadow: 0 0 20px var(--primary);
 }
+
 
 .projects {
   display: flex;
@@ -227,3 +257,9 @@ section:nth-child(odd) {
   margin: 0 auto;
   text-align: left;
 }
+
+.menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {}

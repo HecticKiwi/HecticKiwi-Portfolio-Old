@@ -5,20 +5,20 @@ import resume from '../assets/documents/Danny Duong Resume.pdf';
 const { PUBLIC_URL } = process.env;
 const IMAGES = `${PUBLIC_URL}/assets/images`;
 
-function Header() {
-  const links = [
-    {
-      label: 'Home',
-      to: '/',
-    }, {
-      label: 'Projects',
-      to: 'projects',
-    }, {
-      label: 'Blog',
-      to: 'blog',
-    },
-  ].map((link, i) => ({ ...link, key: i }));
+const links = [
+  {
+    label: 'Home',
+    to: '/',
+  }, {
+    label: 'Projects',
+    to: 'projects',
+  }, {
+    label: 'Blog',
+    to: 'blog',
+  },
+].map((link, i) => ({ ...link, key: i }));
 
+function Header() {
   return (
     <header>
       <Link to="/" className="link"><span className="logo-text">HecticKiwi</span></Link>
@@ -38,6 +38,7 @@ function Header() {
           <a className="link" href="https://github.com/HecticKiwi" target="_blank" rel="noreferrer"><img src={`${IMAGES}/github.svg`} title="GitHub" alt="GitHub" /></a>
           <a className="link" href="https://linkedin.com/in/danny-duong-" target="_blank" rel="noreferrer"><img src={`${IMAGES}/linkedin.svg`} title="LinkedIn" alt="LinkedIn" /></a>
         </div>
+        <img className="menu-toggle" src={`${IMAGES}/menu.svg`} alt="Navigation" />
       </nav>
     </header>
   );
