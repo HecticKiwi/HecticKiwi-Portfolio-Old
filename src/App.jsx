@@ -1,10 +1,12 @@
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, useLocation, useOutlet } from "react-router-dom";
-import Blog from "./pages/Blog";
-
+import {
+  createBrowserRouter, createRoutesFromElements, Route, RouterProvider, useLocation, useOutlet,
+} from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import Projects from "./pages/Projects";
+import Header from './components/Header';
+import Home from './pages/Home';
+import Blog from './pages/Blog';
+
+import Projects from './pages/Projects';
 
 const containerVariants = {
   hidden: {
@@ -12,11 +14,11 @@ const containerVariants = {
   },
   visible: {
     opacity: 1,
-    transition: { duration: .25, type: "tween" }
-  }
-}
+    transition: { duration: 0.25, type: 'tween' },
+  },
+};
 
-const Root = () => {
+function Root() {
   const outlet = useOutlet();
 
   return (
@@ -26,9 +28,9 @@ const Root = () => {
         <motion.div
           key={useLocation().pathname}
           variants={containerVariants}
-          initial='hidden'
-          animate='visible'
-          exit='hidden'
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
         >
           {outlet}
         </motion.div>
@@ -43,15 +45,13 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="projects" element={<Projects />} />
       <Route path="blog" element={<Blog />} />
-    </Route>
-  )
-)
+    </Route>,
+  ),
+);
 
 function App() {
   return (
-    <>
-      <RouterProvider router={router} />
-    </>
+    <RouterProvider router={router} />
   );
 }
 

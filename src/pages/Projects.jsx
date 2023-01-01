@@ -1,6 +1,6 @@
-import Tile from "../components/Tile";
+import Tile from '../components/Tile';
 
-const Projects = () => {
+function Projects() {
   return (
     <>
       <section className="projects">
@@ -85,9 +85,7 @@ const Projects = () => {
             sourceLink="https://github.com/HecticKiwi/Rock-Paper-Scissors/"
           />
         </div>
-        <p>
-          These projects were completed as part of <a href="https://www.theodinproject.com/" className="link link--button" target="_blank" rel="noopener noreferrer">The Odin Project</a>'s curriculum.
-        </p>
+        <p>These projects were completed as part of <a href="https://www.theodinproject.com/" className="link link--button" target="_blank" rel="noopener noreferrer">The Odin Project</a>&apos;s curriculum.</p>
       </section>
       <section className="projects">
         <h1>C++</h1>
@@ -158,9 +156,7 @@ const Projects = () => {
             sourceLink="https://scratch.mit.edu/projects/99136922/editor"
           />
         </div>
-        <p>
-          See my Scratch profile and the rest of my projects <a href="https://scratch.mit.edu/users/timhortonsyo/" className="link link--button" target="_blank" rel="noopener noreferrer">here</a>.
-        </p>
+        <p>See my Scratch profile and the rest of my projects <a href="https://scratch.mit.edu/users/timhortonsyo/" className="link link--button" target="_blank" rel="noopener noreferrer">here</a>.</p>
       </section>
     </>
   );

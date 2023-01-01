@@ -5,7 +5,6 @@ import { Link, NavLink } from "react-router-dom";
 const PUBLIC_URL = process.env.PUBLIC_URL;
 const IMAGES = PUBLIC_URL + "/assets/images";
 
-
 const Header = () => {
   const links = [
     {
