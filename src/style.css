@@ -224,12 +224,12 @@ section:nth-child(odd) {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 10px;
+  background-color: var(--dark-gray);
 }
 
 .project img {
   width: 100%;
   object-fit: contain;
-  background-color: var(--dark-gray);
   transition: var(--transition-time);
   display: block;
 }
