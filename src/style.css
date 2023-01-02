@@ -105,7 +105,7 @@ header .links,
   content: '';
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: var(--light-primary);
   left: 0;
   bottom: 0;
@@ -135,11 +135,17 @@ section:nth-child(odd) {
   width: min(100%, 800px);
 }
 
+.hero {
+  overflow: hidden;
+}
+
 .hero .content {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  column-gap: 25px;
+  row-gap: 45px;
+  /* gap: 25px; */
   flex-wrap: wrap;
   margin: 0 auto;
 }
@@ -242,10 +248,6 @@ section:nth-child(odd) {
   gap: 10px;
   transition: var(--transition-time);
   pointer-events: none;
-}
-
-.project .image:hover img {
-  filter: blur(5px);
 }
 
 .project .image:hover .overlay {

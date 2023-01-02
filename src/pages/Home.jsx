@@ -12,7 +12,7 @@ function Home() {
           <div className="intro">
             <h1>Hi, I'm HecticKiwi.</h1>
             <p>
-              My name is Danny and I'm currently studying software development at the University of Calgary. In my free
+              My name is Danny and I'm currently studying software development at the <a className="link link--underline" href="https://www.ucalgary.ca/" target="_blank" rel="noreferrer">University of Calgary</a>. In my free
               time, I try to expand my skillset by exploring various programming languages and tools.
             </p>
           </div>
