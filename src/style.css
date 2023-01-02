@@ -214,7 +214,6 @@ section:nth-child(odd) {
 }
 
 .project {
-  width: 200px;
   margin: 0 auto;
 }
 
@@ -225,6 +224,11 @@ section:nth-child(odd) {
   overflow: hidden;
   margin-bottom: 10px;
   background-color: var(--dark-gray);
+  width: 200px;
+}
+
+.project .image.shrink {
+  height: 200px;
 }
 
 .project img {
@@ -232,6 +236,14 @@ section:nth-child(odd) {
   object-fit: contain;
   transition: var(--transition-time);
   display: block;
+}
+
+.project .image.shrink img {
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .project .overlay {

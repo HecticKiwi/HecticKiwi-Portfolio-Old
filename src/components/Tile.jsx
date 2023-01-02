@@ -7,7 +7,7 @@ const Tile = ({
   name, img, projectLink, sourceLink,
 }) => (
   <figure className="project">
-    <div className="image">
+    <div className={`image${img.endsWith('.svg') ? ' shrink' : ''}`}>
       <img src={IMAGES + img} alt="" />
       <div className="overlay">
         <a href={projectLink} target="_blank" className="link link--button" rel="noreferrer">Project</a>
