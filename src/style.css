@@ -23,7 +23,6 @@ figcaption {
 
 body {
   margin: 0;
-  padding: 0;
 }
 
 header {
@@ -66,7 +65,7 @@ header .links,
 }
 
 .link:hover {
-  filter: brightness(0.8)
+  filter: brightness(0.8);
 }
 
 .link.active {
@@ -77,8 +76,7 @@ header .links,
 .underline {
   position: absolute;
   bottom: -1px;
-  left: 0;
-  right: 0;
+  inset-inline: 0;
   height: 1px;
   background: white;
 }
@@ -89,11 +87,6 @@ header .links,
   border-radius: 0.25em;
   display: inline-block;
   border: none;
-}
-
-.link--button:hover {
-  color: white;
-  filter: brightness(0.8);
 }
 
 .link--underline {
@@ -108,7 +101,7 @@ header .links,
   height: 1px;
   background-color: var(--light-primary);
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   transform: translateY(0.3rem);
   filter: opacity(0);
   transition: var(--transition-time);
@@ -132,7 +125,7 @@ section:nth-child(odd) {
 }
 
 .content {
-  width: min(100%, 800px);
+  max-width: 800px;
 }
 
 .hero {
@@ -195,20 +188,16 @@ section:nth-child(odd) {
   height: auto;
 }
 
-
 .projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   text-align: center;
-  gap: 10px;
 }
 
 .projects .content {
-  width: min(100%, 920px);
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-block: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, 208px);
   justify-content: center;
   gap: 40px;
 }

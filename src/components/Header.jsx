@@ -33,7 +33,7 @@ function Header() {
             )}
           </NavLink>
         ))}
-        <Link className="link" to={resume} target="_blank">Resume</Link>
+        <a className="link" href={resume} target="_blank" rel="noreferrer">Resume</a>
         <div className="social">
           <a className="link" href="https://github.com/HecticKiwi" target="_blank" rel="noreferrer"><img src={`${IMAGES}/github.svg`} title="GitHub" alt="GitHub" /></a>
           <a className="link" href="https://linkedin.com/in/danny-duong-" target="_blank" rel="noreferrer"><img src={`${IMAGES}/linkedin.svg`} title="LinkedIn" alt="LinkedIn" /></a>
