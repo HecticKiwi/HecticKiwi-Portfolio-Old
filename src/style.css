@@ -93,14 +93,14 @@ header .links,
   color: var(--light-primary);
   position: relative;
   background-image: linear-gradient(var(--light-primary), var(--light-primary));
-  background-size: 0% 1px;
+  background-size: 0% 1.5px;
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: left bottom -1px;
   transition: background-size var(--transition-time);
 }
 
 .link--underline:hover {
-  background-size: 100% 1px;
+  background-size: 100% 1.5px;
 }
 
 section {
