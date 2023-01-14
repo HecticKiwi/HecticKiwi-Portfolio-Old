@@ -92,23 +92,15 @@ header .links,
 .link--underline {
   color: var(--light-primary);
   position: relative;
+  background-image: linear-gradient(var(--light-primary), var(--light-primary));
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size var(--transition-time);
 }
 
-.link--underline::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  background-color: var(--light-primary);
-  left: 0;
-  bottom: -1px;
-  transition: all var(--transition-time);
-  filter: opacity(0);
-}
-
-.link--underline:hover::after {
-  width: 100%;
-  filter: opacity(0.5);
+.link--underline:hover {
+  background-size: 100% 1px;
 }
 
 section {
