@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import Tile from '../components/Tile';
 
-const { PUBLIC_URL } = process.env;
-const IMAGES = `${PUBLIC_URL}/assets/images`;
+const IMAGES = '/assets/images';
 
 function Home() {
   return (

@@ -2,8 +2,7 @@ import { motion } from 'framer-motion';
 import { Link, NavLink } from 'react-router-dom';
 import resume from '../assets/documents/Danny Duong Resume.pdf';
 
-const { PUBLIC_URL } = process.env;
-const IMAGES = `${PUBLIC_URL}/assets/images`;
+const IMAGES = '/assets/images';
 
 const links = [
   {

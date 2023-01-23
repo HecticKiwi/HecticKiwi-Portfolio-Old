@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
-const { PUBLIC_URL } = process.env;
-const IMAGES = `${PUBLIC_URL}/assets/images`;
+const IMAGES = '/assets/images';
 
 const Tile = ({
   name, img, projectLink, sourceLink,
