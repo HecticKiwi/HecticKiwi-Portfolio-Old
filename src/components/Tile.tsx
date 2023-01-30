@@ -1,11 +1,17 @@
-import PropTypes from 'prop-types';
+import PropTypes, { string } from 'prop-types';
 
 const IMAGES = '/assets/images';
 
-const Tile = ({
-  name, img, projectLink, sourceLink,
-}) => (
-  <figure className="project">
+interface TileProps {
+  name: string;
+  img: string;
+  projectLink: string;
+  sourceLink: string;
+}
+
+const Tile = ({ name, img, projectLink, sourceLink }: TileProps) => {
+
+  return <figure className="project">
     <div className={`image${img.endsWith('.svg') ? ' shrink' : ''}`}>
       <img src={IMAGES + img} alt="" />
       <div className="overlay">
@@ -15,13 +21,13 @@ const Tile = ({
     </div>
     <figcaption>{name}</figcaption>
   </figure>
-);
-
-Tile.propTypes = {
-  name: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
-  projectLink: PropTypes.string.isRequired,
-  sourceLink: PropTypes.string.isRequired,
 };
+
+// Tile.propTypes = {
+//   name: PropTypes.string.isRequired,
+//   img: PropTypes.string.isRequired,
+//   projectLink: PropTypes.string.isRequired,
+//   sourceLink: PropTypes.string.isRequired,
+// };
 
 export default Tile;
