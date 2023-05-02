@@ -2,7 +2,7 @@ const Blog = () => (
   <>
     <section className="description">
       <article className="content">
-        <h2>Surviving the Winter Term (April 21, 2023)</h2>
+        <h2>Surviving the Winter Term (May 1, 2023)</h2>
         <p>Well... this term has certainly been an adventure. It's been a long time since the last update, but I had to focus on staying afloat in a torrent of assignments, projects, and exams. It's time to rest these weary bones, and share some interesting results while I'm at it.</p>
         <p>Let's start with SENG 401, one of this term's courses that was about software architecture. We were given a group project to complete over the term: a web-based application that demonstrates the use of architectures and databases.</p>
         <p>My group settled on an online player vs. player game. Ambitious was an understatement; we envisioned a realtime combat system, complete with a chat, a friend system, skins, and even a gacha system (what?).</p>
