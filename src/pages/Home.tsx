@@ -14,6 +14,7 @@ function Home() {
               My name is Danny and I'm currently studying software development at the <a className="link link--underline" href="https://www.ucalgary.ca/" target="_blank" rel="noreferrer">University of Calgary</a>. In my free
               time, I try to expand my skillset by exploring various programming languages and tools.
             </p>
+            <p>I'm currently interning at <a className="link link--underline" href="https://www.energytoolbase.com/" target="_blank" rel="noreferrer">Energy Toolbase</a>!</p>
           </div>
           <div className="pfp">
             <img src={`${IMAGES}/Spongebob.jpg`} alt="" />
