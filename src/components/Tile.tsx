@@ -37,5 +37,5 @@ const Tile = ({ name, img, projectLink, sourceLink }: TileProps) => {
     </figure>
   );
 };
-
+//
 export default Tile;
