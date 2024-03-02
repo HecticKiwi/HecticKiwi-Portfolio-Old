@@ -2,6 +2,63 @@ const Blog = () => (
   <>
     <section className="description">
       <article className="content">
+        <h2>New Portfolio Site! (March 3, 2024)</h2>
+        <p>
+          I'm back! This site is pretty old, so I finally decided to build a new
+          portfolio site! This will probably be my last blog post here.
+        </p>
+        <p>
+          The new site is much more oriented towards selling myself as a
+          web-developer, a proper portfolio showcasing my skills. To be honest,
+          I don't feel all that capable as a web-dev just yet, but this archaic
+          site certainly wasn't helping.
+        </p>
+        <p>
+          I chose to leave out the blog section in the new site because 1) this
+          "blog" is moreso just a diary with my mundane ramblings, not worth
+          reading I think, and 2) does anyone even read these in the first
+          place? I could be writing to myself for all I know. If anyone's
+          reading this and you want me to continue making these posts for some
+          reason, I suppose you can message me (maybe using the email form in my
+          new site :D).
+        </p>
+
+        <p>
+          You can see my new site{" "}
+          <a
+            className="link link--underline"
+            href="https://dannyduong.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            here
+          </a>
+          .
+        </p>
+        <p>
+          Also, I actually finished the Reddit clone I mentioned in the last
+          update! It's called Reddot (very original, I know) and you can visit
+          it{" "}
+          <a
+            className="link link--underline"
+            href="https://hk-reddot.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            here
+          </a>
+          . It's also featured in my new site. Sorry to those who bet I would
+          100% the Batman Arkham trilogy first; So far I have 100% in Arkham
+          Asylum, about 90% in City, and about 80% in Knight ;)
+        </p>
+        <p>
+          Well, if anyone's reading this, thanks for tuning in. It's the end for
+          this site, but the beginning of my professional career.
+        </p>
+      </article>
+    </section>
+    <section className="description">
+      <article className="content">
         <h2>Happy New Year! (January 3, 2024)</h2>
         <p>
           And merry belated Christmas! And happy belated Thanksgiving! And happy

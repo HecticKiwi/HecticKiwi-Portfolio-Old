@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import Tile from '../components/Tile';
+import { Link } from "react-router-dom";
+import Tile from "../components/Tile";
 
-const IMAGES = '/assets/images';
+const IMAGES = "/assets/images";
 
 function Home() {
   return (
@@ -11,10 +11,31 @@ function Home() {
           <div className="intro">
             <h1>Hi, I'm HecticKiwi.</h1>
             <p>
-              My name is Danny and I'm currently studying software development at the <a className="link link--underline" href="https://www.ucalgary.ca/" target="_blank" rel="noreferrer">University of Calgary</a>. In my free
-              time, I try to expand my skillset by exploring various programming languages and tools.
+              My name is Danny and I'm currently studying software development
+              at the{" "}
+              <a
+                className="link link--underline"
+                href="https://www.ucalgary.ca/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                University of Calgary
+              </a>
+              . In my free time, I try to expand my skillset by exploring
+              various programming languages and tools.
             </p>
-            <p>I'm currently interning at <a className="link link--underline" href="https://www.energytoolbase.com/" target="_blank" rel="noreferrer">Energy Toolbase</a>!</p>
+            <p>
+              This is my old website. You can find my new site{" "}
+              <a
+                className="link link--underline"
+                href="https://dannyduong.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                here
+              </a>
+              .
+            </p>
           </div>
           <div className="pfp">
             <img src={`${IMAGES}/Spongebob.jpg`} alt="" />
@@ -50,7 +71,11 @@ function Home() {
           />
         </div>
         <p>
-          You'll find more on my <Link to="projects" className="link link--button">projects</Link> page!
+          You'll find more on my{" "}
+          <Link to="projects" className="link link--button">
+            projects
+          </Link>{" "}
+          page!
         </p>
       </section>
     </>
