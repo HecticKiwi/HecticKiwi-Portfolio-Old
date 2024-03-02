@@ -281,4 +281,5 @@ section:nth-child(odd) {
   display: none;
 }
 
+/*  */
 @media screen and (max-width: 400px) {}
